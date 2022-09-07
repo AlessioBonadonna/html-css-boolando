@@ -1,3 +1,52 @@
-body{
-    background-color: blue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, arial;
 }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/******************* /Utility ******************/
+header{
+    background-color: #ff6801;
+    padding:15px;
+    box-shadow: 10px 10px 40px 10px grey;
+}
+
+.container-header{
+ width:80%;
+ margin: auto;
+ display: flex;
+ justify-content:space-between ;
+ align-items: center;
+ 
+}
+.navsx-header{
+
+}
+header img{
+ width:150px;
+}
+ header ul{
+    display: flex;
+
+ }
+ header li{
+    list-style: none;
+    color: white;
+ }
+ header a {
+    color:white;
+    text-decoration: none;
+    justify-content: space-between;
+    margin-left:10px;
+ }
+ .navdx-header li {
+    margin-right: 10px;
+ }
+/************ /head*************/
