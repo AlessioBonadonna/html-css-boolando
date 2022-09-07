@@ -14,11 +14,11 @@
 /******************* /Utility ******************/
 header {
     background-color: #ff6801;
-  
+    box-shadow: 8px 10px 12px 5px #717171;
     box-shadow: 10px 10px 40px 10px grey;
     position: fixed;
     width: 100%;
-    top:0;
+    top: 0;
     z-index: 200;
 
 }
@@ -30,13 +30,16 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.navdx-header{
+
+.navdx-header {
     padding: 15px;
 
 }
-.navsx-header{
+
+.navsx-header {
     padding: 15px;
 }
+
 header img {
     width: 150px;
     padding: 15px;
@@ -61,30 +64,34 @@ header a {
 
 .navdx-header li {
     margin-right: 10px;
-   
+
 }
 
-/************ /head*************/
+/************ /header*************/
 
 /****  Main ****/
-.container-main{
+.container-main {
 
-        width: 80%;
-        margin: 0 auto;
-    
+    width: 80%;
+    margin: 0 auto;
+
 }
+
 .item {
-    width: calc((100% - 32px) / 3) ; 
+    width: calc((100% - 30px) / 3);
     position: relative;
- 
+
 }
-.row{
+
+.row {
     margin-top: 100px;
 }
+
 .flex {
-    display: flex; 
+    display: flex;
 
 }
+
 .item img {
     width: 100%;
 }
@@ -92,6 +99,7 @@ header a {
 .margine {
     margin: 0 15px;
 }
+
 .label {
     display: block;
     position: absolute;
@@ -101,11 +109,12 @@ header a {
     height: 30px;
     padding: 5px;
     background-color: red;
+    color: white;
 
-   
+
 }
 
-.label-s{
+.label-s {
     display: block;
     position: absolute;
     left: 50px;
@@ -114,72 +123,88 @@ header a {
     height: 30px;
     padding: 5px;
     background-color: green;
-    color:white;
+    color: white;
 }
-.heart{
+
+.heart {
     display: block;
     position: absolute;
     right: 0;
     top: 0;
     width: 25px;
-     height: 30px;
+    height: 30px;
     padding: 5px;
     background-color: rgb(241, 246, 241);
     font-size: 1.5em;
-    
 
-    
+
+
 }
-.prezzo{
-    color:red
+
+.prezzo {
+    color: red
 }
-.underline{
+
+.underline {
     text-decoration: line-through;
-    color:black;
+    color: black;
 }
 
 
 
 /********* FOOTER**********/
-footer{
-    background-color:black;
-    color:white;
+footer {
+    background-color: black;
+    color: white;
 
 }
-.logosocial{
+
+.logosocial {
     width: 20px;
     margin-right: 10px;
     fill: #f6f6f6;
 }
-.cont-foot{
+
+.logo-social svg {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.cont-foot {
     width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top:20px;
-    margin-top:50px;
+    padding-top: 20px;
+    margin-top: 50px;
     align-items: baseline;
 }
+
 .logo-social svg {
     max-width: 2rem;
-    fill:#f6f6f6;
+    fill: #f6f6f6;
 }
+
 .logo-social {
     display: block;
     margin: auto;
 }
+
 .divsx-foot ul {
     display: flex;
     justify-content: space-between;
 
 }
+
 .divsx-foot li {
     list-style: none;
 }
+
 .divsx-foot {
     min-width: 30%;
 }
+
 .divsx-foot a {
     font-size: small;
     color: #f6f6f6;
@@ -187,3 +212,18 @@ footer{
 }
 
 /****************BONUS*********/
+.heart:hover {
+    color: red;
+}
+
+.seconda {
+    display: none;
+}
+
+.item:hover .prima {
+    display: none;
+}
+
+.item:hover .seconda {
+    display: inline-block;
+}
