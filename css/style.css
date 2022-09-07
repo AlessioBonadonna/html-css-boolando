@@ -74,7 +74,7 @@ header a {
     
 }
 .item {
-    width: calc((100% - 30px) / 3) ; 
+    width: calc((100% - 32px) / 3) ; 
     position: relative;
  
 }
@@ -136,4 +136,52 @@ header a {
 .underline{
     text-decoration: line-through;
     color:black;
+}
+
+
+
+/********* FOOTER**********/
+footer{
+    background-color:black;
+    color:white;
+
+}
+.logosocial{
+    width: 20px;
+    margin-right: 10px;
+    fill: #f6f6f6;
+}
+.cont-foot{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:20px;
+    margin-top:50px;
+    align-items: baseline;
+}
+.logo-social svg {
+    max-width: 2rem;
+    fill:#f6f6f6;
+}
+.logo-social {
+    display: block;
+    margin: auto;
+}
+.divsx-foot ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+.divsx-foot li {
+    list-style: none;
+}
+.divsx-foot {
+    min-width: 30%;
+}
+.divsx-foot a {
+    font-size: small;
+    color: #f6f6f6;
+    text-decoration: none;
 }
