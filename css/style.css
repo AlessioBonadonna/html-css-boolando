@@ -12,41 +12,128 @@
 }
 
 /******************* /Utility ******************/
-header{
+header {
     background-color: #ff6801;
-    padding:15px;
+  
     box-shadow: 10px 10px 40px 10px grey;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 200;
+
 }
 
-.container-header{
- width:80%;
- margin: auto;
- display: flex;
- justify-content:space-between ;
- align-items: center;
- 
+.container-header {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navdx-header{
+    padding: 15px;
+
 }
 .navsx-header{
+    padding: 15px;
+}
+header img {
+    width: 150px;
+    padding: 15px;
+}
 
-}
-header img{
- width:150px;
-}
- header ul{
+header ul {
     display: flex;
 
- }
- header li{
+}
+
+header li {
     list-style: none;
     color: white;
- }
- header a {
-    color:white;
+}
+
+header a {
+    color: white;
     text-decoration: none;
     justify-content: space-between;
-    margin-left:10px;
- }
- .navdx-header li {
+    margin-left: 10px;
+}
+
+.navdx-header li {
     margin-right: 10px;
- }
+   
+}
+
 /************ /head*************/
+
+/****  Main ****/
+.container-main{
+
+        width: 80%;
+        margin: 0 auto;
+    
+}
+.item {
+    width: calc((100% - 30px) / 3) ; 
+    position: relative;
+ 
+}
+.row{
+    margin-top: 100px;
+}
+.flex {
+    display: flex; 
+
+}
+.item img {
+    width: 100%;
+}
+
+.margine {
+    margin: 0 15px;
+}
+.label {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 150px;
+    width: auto;
+    height: 30px;
+    padding: 5px;
+    background-color: red;
+
+   
+}
+
+.label-s{
+    display: block;
+    position: absolute;
+    left: 50px;
+    bottom: 150px;
+    width: auto;
+    height: 30px;
+    padding: 5px;
+    background-color: green;
+    color:white;
+}
+.heart{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+     height: 30px;
+    padding: 5px;
+    background-color: rgb(241, 246, 241);
+    font-size: 1.5em;
+    
+
+    
+}
+.prezzo{
+    color:red
+}
+.underline{
+    text-decoration: line-through;
+    color:black;
+}
